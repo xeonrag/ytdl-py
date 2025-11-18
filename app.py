@@ -142,7 +142,7 @@ async def download_video(
                 "status": "success",
                 "title": info["title"],
                 "thumb": info.get("thumbnail"),
-                "url": f"https://lordxdd-ytdlp.hf.space/cdn/video/{quote(os.path.basename(file_path))}",
+                "url": f"https://gentle-darelle-aswinsabu1267-d4ce8d9f.koyeb.app/cdn/video/{quote(os.path.basename(file_path))}",
             }
         media_type = f"video/{file_ext}" if file_ext else "video/mp4"
         with open(file_path, "rb") as f:
@@ -203,7 +203,7 @@ async def download_audio(
                 "status": "success",
                 "title": info.get("title"),
                 "thumb": info.get("thumbnail"),
-                "url": f"https://lordxdd-ytdlp.hf.space/cdn/audio/{quote(os.path.basename(file_path))}",
+                "url": f"https://gentle-darelle-aswinsabu1267-d4ce8d9f.koyeb.app/cdn/audio/{quote(os.path.basename(file_path))}",
             }
         with open(file_path, "rb") as f:
             data = f.read()
@@ -263,7 +263,7 @@ async def download_audio(
                 "status": "success",
                 "title": info.get("title"),
                 "thumb": info.get("thumbnail"),
-                "url": f"https://lordxdd-ytdlp.hf.space/cdn/audio/{quote(os.path.basename(file_path))}",
+                "url": f"https://gentle-darelle-aswinsabu1267-d4ce8d9f.koyeb.app/cdn/audio/{quote(os.path.basename(file_path))}",
             }
 
         with open(file_path, "rb") as f:
@@ -324,4 +324,4 @@ def run_gradio_ui():
 
 
 if __name__ == "__main__":
-    uvicorn.run("app:app", host="0.0.0.0", port=7860)
+    uvicorn.run("app:app", host="0.0.0.0", port=8000)
